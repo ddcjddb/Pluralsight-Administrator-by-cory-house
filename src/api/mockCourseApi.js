@@ -72,6 +72,7 @@ class CourseApi {
         const minCourseTitleLength = 1;
         if (course.title.length < minCourseTitleLength) {
           reject(`Title must be at least ${minCourseTitleLength} characters.`);
+          // alert(`Title must be at least ${minCourseTitleLength} characters.`);
         }
 
         if (course.id) {
